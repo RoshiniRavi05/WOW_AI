@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#000000">
+
+    <!-- Welcome -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+
+
+    <!-- Upload Image -->
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Image from Gallery"
+        android:layout_below="@id/tvWelcome"
+        android:layout_marginTop="40dp"/>
+
+
+    <!-- Capture Photo -->
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture Photo"
+        android:layout_below="@id/btnGallery"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Upload PDF -->
+    <Button
+        android:id="@+id/btnPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload PDF"
+        android:layout_below="@id/btnCamera"
+        android:layout_marginTop="16dp"/>
+
+    <!-- ✅ Set Reminder (HERE, below PDF) -->
+    <Button
+        android:id="@+id/btnReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Reminder ⏰"
+        android:layout_below="@id/btnPdf"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Back -->
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Back"
+        android:textColor="#AAAAAA"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
